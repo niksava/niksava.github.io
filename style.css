@@ -1,0 +1,554 @@
+.intro {
+    height: 700px;
+    position: relative;
+    background-image: url(img/inici.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.title-intro{
+    color: white;
+    padding-top: 200px;
+    padding-left: 20%;
+    font-size: 56px;
+}
+.about-me{
+    width: 50px;
+    margin-left: 10%;
+    margin-top: 120px;
+}
+.img2{
+    width: 800%;
+}
+ul{
+    margin: 0 auto;
+}
+.nav-bar{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+.title-about{
+    text-align: center;
+    border-bottom: 3px solid black;
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+.text-about{
+    margin: 20px 20%;
+    text-align: center;
+}
+.img-about{
+    width: 300px;
+    margin-left: 25%;
+    border-radius: 20px;
+}
+.title-professio{
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.lista-about{
+    float: right;
+    margin-right: 45%;
+    margin-top: 30px;
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::selection{
+  color: #fff;
+  background: #b065ee;
+}
+.skill-bars{
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 25px 30px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #9d1be4;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+  width: 90%;
+}
+.bar .progress-line.css span{
+  width: 60%;
+}
+.bar .progress-line.jquery span{
+  width: 85%;
+}
+.bar .progress-line.python span{
+  width: 50%;
+}
+.bar .progress-line.mysql span{
+  width: 75%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "60%";
+}
+.progress-line.jquery span::after{
+  content: "85%";
+}
+.progress-line.python span::after{
+  content: "50%";
+}
+.progress-line.mysql span::after{
+  content: "75%";
+}
+.title-skills{
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.services_item-text {
+   letter-spacing: 0.1px;
+   padding: 0px 30px 30px;
+   background-color: #eeeeee;
+}
+.icon_html{
+   width: 70px;
+}
+.cart_shopping{
+   margin-top: 30px;
+   width: 70px;
+}
+.cubes {
+   margin-top: 30px;
+   width: 70px;
+}
+.search{
+   width: 70px;
+   margin-top: 10px;
+}
+.mobile{
+   width: 60px;
+}
+.user_gears{
+   width: 70px;
+   margin-top: 20px;
+}
+.gallery-container{
+   width:80%;
+   margin:100px auto;
+   
+   display:grid;
+   grid-template-columns:repeat(3,33.33%);
+   grid-template-rows:repeat(2,300px);
+}
+    
+.gallery-container .gallery-card{overflow:hidden};
+.gallery-container .gallery-card a{
+   width:100%;
+   height:100%;
+}
+    
+.gallery-container .gallery-card a > img{
+   width:100%;
+   height:100%;
+   object-fit:cover;
+   transition: 0.5s;
+}
+.gallery-container .gallery-card a > img:hover{
+  transform: scale(1.5) rotate(10deg);
+}
+.services_title{
+    text-align: center;
+    border-bottom: 3px solid black;
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+.pricing-plan {
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222222;
+    margin: 15px;
+  }
+
+.pricing-plan_header {
+    padding: 25px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.pricing-plan_title,
+.pricing-plan_summary{
+    margin: 0;
+    text-align: center;
+}
+.pricing-plan_title{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.pricing-plan_summary{
+    font-size: 1em;
+    font-weight: 300;
+}
+.pricing-plan_description {
+    padding: 25px;
+}
+.pricing-plan_list{
+    padding: 0;
+    margin: 0;
+}
+.pricing-plan_feature {
+    list-style: none;
+    margin: 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.9em;
+}
+.pricing-plan_feature:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+.pricing-plan_feature::before {
+    content: "\2714";
+    color: #A2C469;
+    position: absolute;
+    left: 0;
+}
+.pricing-plan_actions{
+    padding: 25px;
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+.pricing-plan_button {
+    display: inline-block;
+    margin: 15px auto;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #A2C469;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #A2C469;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+}
+.pricing-plan_button:hover{
+    background: #A2C469;
+    color: #ffffff;
+}
+.pricing-plan_cost{
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+}
+.pricing-plan_text{
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+.pricing-plan_highlighted{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+.pricing-plan_special-text{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #727272;
+    background: #dadada;
+    box-shadow: 0 0 10px #c7c7c7 inset;
+}
+.pricing-plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.categories {
+  text-align: center;
+}
+.categories ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.categories li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: relative;
+}
+.categories a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.categories a:hover {
+  color: #ffd1c7;
+}
+.categories a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+.categories a:hover::before{
+  width: 100%;
+}
+.prices_title{
+    font-size: 30px;
+    padding: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.title-price{
+    text-align: center;
+    border-bottom: 3px solid black;
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.price_title {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  padding: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+.price_text {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin: 50px;
+  padding: 0px 20px;
+}
+.pricing-table {
+  box-shadow: 0px 0px 18px #ccc;
+  text-align: center;
+  padding: 30px 0px;
+  border-radius: 5px;
+  position: relative;
+}
+.pricing-table .head {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 50px;
+  transition: all 0.5s ease;
+}
+.pricing-table:hover .head {
+  border-bottom: 1px solid #8e2de2;
+}
+
+.pricing-table .head .title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pricing-table .content .price {
+  background: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  line-height: 90px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  margin-top: -50px;
+  transition: all 0.5s ease;
+}
+.pricing-table:hover .content .price {
+  transform: scale(1.2);
+}
+.pricing-table .content .price h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.pricing-table .content ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.pricing-table .content ul li {
+  margin: 20px 0px;
+  font-size: 14px;
+  color: #555;
+}
+
+.pricing-table .content .sign-up {
+  background: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
+  border-radius: 40px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+.pricing-table .btn {
+  color: #fff;
+  padding: 14px 40px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+  border: none;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  text-decoration: none;
+  margin: 2px;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.pricing-table .btn:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-table .btn.bordered {
+  z-index: 50;
+  color: #333;
+}
+.pricing-table:hover .btn.bordered {
+  color: #fff !important;
+}
+
+.pricing-table .btn.bordered:after {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+  width: 100%;
+  z-index: -1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+.pricing-table:hover .btn.bordered:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
